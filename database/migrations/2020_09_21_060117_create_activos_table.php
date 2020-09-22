@@ -15,10 +15,10 @@ class CreateActivosTable extends Migration
     {
         Schema::create('activos', function (Blueprint $table) {
             $table->id('id_activo');
-            $table->bigInteger('numero_serial',10);
+            $table->string('numero_serial',10);
             $table->string('numero_serial_dispositivo',10);
             $table->string('numero_serial_tecNM',10);
-            $table->smallInteger('tipo_activo',2);
+            $table->smallInteger('tipo_activo');
             $table->string('nombre_activo', 50);
             $table->timestamps();
             $table->dateTime('fecha_alta');
@@ -28,9 +28,9 @@ class CreateActivosTable extends Migration
             $table->string('descripcion', 50)->nullable();
             $table->binary('imagen')->nullable();
             $table->binary('codigo_qr');
-            $table->smallInteger('tipo_ubicacion',2);
+            $table->smallInteger('tipo_ubicacion');
             $table->string('nombre_ubicacion', 50);
-            $table->smallInteger('tipo_estatus',2);
+            $table->smallInteger('tipo_estatus');
 
         });
     }

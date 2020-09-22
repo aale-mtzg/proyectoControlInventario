@@ -129,6 +129,7 @@ class ActivoController extends Controller
     {
         //Borrar registro con id seleccionado
         $activo->delete();
-        return redirect('/activos')->with('destroy', 'Se elimino correctamente')
+        return redirect('/activos')->with('destroy', 'Se elimino correctamente');
     }
 }
+

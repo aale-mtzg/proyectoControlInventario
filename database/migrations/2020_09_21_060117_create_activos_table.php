@@ -31,7 +31,6 @@ class CreateActivosTable extends Migration
             $table->smallInteger('tipo_ubicacion');
             $table->string('nombre_ubicacion', 50);
             $table->smallInteger('tipo_estatus');
-
         });
     }
 

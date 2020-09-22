@@ -19,8 +19,8 @@ Route::get('/', function () {
 
 //Rutas de las vistas
     Route::get('/activos', 'ActivoController@index');
-    Route::get('/activos/create', 'ActivoController@create');
-    Route::post('/activos', 'ActivoController@store');
+    Route::get('/activo/create', 'ActivoController@create');
+    Route::post('/activo', 'ActivoController@store');
     Route::get('/activo/{activo}/show', 'ActivoController@show');
     Route::get('/activo/{activo}/edit', 'ActivoController@edit');
     Route::put('/activo/{activo}', 'ActivoController@update');

@@ -132,4 +132,3 @@ class ActivoController extends Controller
         return redirect('/activos')->with('destroy', 'Se elimino correctamente');
     }
 }
-
